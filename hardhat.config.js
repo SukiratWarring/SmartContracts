@@ -1,4 +1,4 @@
-let secret=require("./secret.json")
+let secret = require("./secret.json")
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-etherscan")
 
@@ -26,7 +26,11 @@ module.exports = {
       gasPrice: 225000000000,
       chainId: 43113,
       accounts: [secret.key]
-    }}
+    }
+  },
+  etherscan:{
+    apiKey: "7RA8NI3DXSXF6C8F79U4F5FVZQI83RSNGX"
+}
   
 };
 
